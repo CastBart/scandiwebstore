@@ -1,9 +1,20 @@
-import { Component } from 'react';
-import './App.css';
+//react components
+import { Component } from "react";
+import { Route, Routes } from "react-router-dom";
 
-class App extends Component{
-  render(){
-    return <h1>Scandiweb</h1>
+// custom components
+import Home from "./components/pages/Home";
+import Layout from "./components/layout/Layout";
+
+class App extends Component {
+  render() {
+    return (
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Layout>
+    );
   }
 }
 
