@@ -3,7 +3,7 @@ import { Component } from "react";
 import { GET_CATEGORIES } from "../../api/queries";
 
 import styles from "./Header.module.css";
-
+//testing pushing to git
 class Header extends Component {
   render() {
     return (
